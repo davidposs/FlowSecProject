@@ -1,4 +1,6 @@
-This file briefly describes how to set up and run the project.
+This file briefly describes how to set up and run the project. Also check out the dropbox for more information!
+
+
 
 Step 1: Install the Floodlight VM
 - The VM can be found here: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/Floodlight+VM
