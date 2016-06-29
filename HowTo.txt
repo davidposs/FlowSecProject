@@ -2,13 +2,13 @@ This file briefly describes how to set up and run the project. Also check out th
 
 Step 1: Install the Floodlight VM
 - The VM can be found here: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/Floodlight+VM
-- Follow the rest of the directions on that page as well.
+- Follow the rest of the directions on that page. Each remaining step takes place in the VM.
 
 Step 2: Install sflow-rt
 - http://www.sflow-rt.com/download.php
 $ wget http://www.inmon.com/products/sFlow-RT/sflow-rt.tar.gz
 $ tar -xvzf sflow-rt.tar.gz
-- Also download the dashboard-example application
+- Also download the dashboard-example
 $ ./get-app.sh sflow-rt dashboard-example
 
 Step 3: Download the mininet.js file from the project's repository on github. 
@@ -21,7 +21,7 @@ $ java -jar target/floodlight.jar
 - Open a new terminal window and run this to open the mininet application
 $ sudo mn --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=OpenFlow13
 
-- Open another new terminal window and run the following command to enable Sflow-rt. Note it is all one command.
+- Open another new terminal window and run the following command to enable sflow-rt
 
 $ sudo ovs-vsctl -- --id=@sflow create sflow agent=eth0  target=\"127.0.0.1:6343\" sampling=10 polling=20 -- -- set bridge s1 sflow=@sflow
 
@@ -32,17 +32,17 @@ $ ./start.sh
 - In the mininet application, run
 > xterm h1 h2
 
-- To create traffic, use the h1 node that just opened up and run
+- Use the node h1 window to create traffic
 $ ping -f 10.0.0.2
 
 - Open a new terminal and run the mininet.js application. In this case, it is in our home directory
 $ nodejs mininet.js
 
-Step 5: Open up sflow-rt in your browser
+Step 5: Open sflow-rt in your browser
 - Go to this address: http://127.0.0.1:8008/html/index.html
-Click on "apps", then click on dashboard-example
+- Go to "apps", and then to dashboard-example
 
-There you go! Here are some other things to check out:
+There you go! Here are some other additional things to check out:
 - Writing a floodlight module: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Write+a+Module
 
 - Using OpenFlow meters: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Use+OpenFlow+Meters
