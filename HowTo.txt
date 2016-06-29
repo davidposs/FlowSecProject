@@ -42,8 +42,9 @@ Step 5: Open up sflow-rt in your browser
 - Go to this address: http://127.0.0.1:8008/html/index.html
 Click on "apps", then click on dashboard-example
 
-There you go! Other things to check out:
+There you go! Here are some other things to check out:
+- Writing a floodlight module: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Write+a+Module
 
-Writing a floodlight module: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Write+a+Module
-Using OpenFlow meters: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Use+OpenFlow+Meters
-Manually inserting flows: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/Static+Flow+Pusher+API
+- Using OpenFlow meters: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/How+to+Use+OpenFlow+Meters
+
+- Manually inserting flows: https://floodlight.atlassian.net/wiki/display/floodlightcontroller/Static+Flow+Pusher+API
