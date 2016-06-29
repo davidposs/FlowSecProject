@@ -26,7 +26,7 @@ $ sudo mn --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=Ope
 $ sudo ovs-vsctl -- --id=@sflow create sflow agent=eth0  target=\"127.0.0.1:6343\" sampling=10 polling=20 -- -- set bridge s1 sflow=@sflow
 
 - Start sflow-rt
-$ cd sflow-rt
+$ cd ../sflow-rt
 $ ./start.sh
 
 - In the mininet application, run
