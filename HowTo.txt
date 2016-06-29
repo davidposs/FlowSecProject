@@ -11,7 +11,7 @@ $ tar -xvzf sflow-rt.tar.gz
 - Also download the dashboard-example application
 $ ./get-app.sh sflow-rt dashboard-example
 
-Step 3: Download the mininet.js file 
+Step 3: Download the mininet.js file from the project's repository on github. 
 
 Step 4: Run the application
 - Run the following commands:
